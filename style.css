@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Lobster');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** {
+border: 1px solid red;
+}*/
+
+
+/* GRID */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  min-height: 1px;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media (max-width: 768px) {
+.col-m-1 {width: 8.33%;}
+.col-m-2 {width: 16.66%;}
+.col-m-3 {width: 25%;}
+.col-m-4 {width: 33.33%;}
+.col-m-5 {width: 41.66%;}
+.col-m-6 {width: 50%;}
+.col-m-7 {width: 58.33%;}
+.col-m-8 {width: 66.66%;}
+.col-m-9 {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+/*HEADER*/
+
+header {
+	height: 0px;
+}
+header .logo {
+	width: 200px;
+	margin: 5px;
+	float: left;
+	cursor: pointer;
+}
+header nav ul {
+	list-style-type: none;
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header nav ul li a {
+	color: #FFF;
+	text-decoration: none;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	font-size: 20px;
+	padding: 0 20px;
+	font-family: 'Archivo Black', sans-serif;
+	margin-left: 10px;
+}
+header li a:hover {
+	color: yellow;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*JUMBOTRON*/
+
+.background {
+	background-image: url('https://raw.githubusercontent.com/piekario13/projekt1/master/images/tlo1.jpg');
+	height: 800px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.slogan {
+	margin-top: 200px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Lobster', cursive;
+	display: inline-block;
+}
+.uppercase {
+	text-transform: uppercase;
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 60px;
+	margin-top: 50px;
+}
+.slogan .btn-warning {
+	text-transform: uppercase;
+	margin-top: 40px;
+	padding: 15px;
+	text-align: center;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+/*SERVICES*/
+
+.services {
+	margin-top: 50px;
+}
+.services .tittle {
+	font-family: 'Archivo Black', sans-serif;
+	text-transform: uppercase;
+}
+.services h8 {
+	font-family: 'Lobster', cursive;
+}
+.services .fa {
+	font-size: 40px;
+	color: #FF8C00;
+}
+.services .fa:hover {
+	cursor: pointer;
+	color: #000;
+}
+.services .col-4 h4 {
+	font-family: 'Archivo Black', sans-serif;
+}
+.services .col-4 p {
+	font-family: 'Lobster', cursive;
+	font-size: 12px;
+}
+
+/*PORTFOLIO*/
+
+.portfolio {
+	height: 1100px;
+	background-color: #F8F8FF;
+}
+.portfolio .col-12 {
+	margin-top: 70px;
+}
+.portfolio .col-12 h2 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.portfolio .col-12 p {
+	font-family: 'Lobster', cursive;
+}
+.portfolio .col-4 .rectangle {
+	background-color: #fff;
+	height: 100px;
+	width: 300px;
+	margin: 0 auto;
+}
+.portfolio .col-4 .square {
+	background-color: #F8F8FF;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+}
+.portfolio img {
+	object-fit: cover;
+	height: 300px;
+	width: 300px;
+}
+.portfolio .tittle {
+	position: relative;
+	margin: 0;
+	padding-top: 20px;
+	font-family: 'Archivo Black', sans-serif;
+}
+.portfolio .text {
+	position: relative;
+	font-family: 'Lobster', cursive;
+}
+
+/*ABOUT*/
+
+.about {
+	margin-top: 70px;
+}
+.about .tittle {
+	font-family: 'Archivo Black', sans-serif;
+	text-transform: uppercase;
+}
+.about p {
+	font-family: 'Lobster', cursive;
+}
+.about .first h4 {
+	text-align: right;
+}
+.about .first p {
+	text-align: right;
+}
+.about .second h4 {
+	text-align: left;
+}
+.about .second p {
+	text-align: left;
+}
+.about .third h4 {
+	text-align: right;
+}
+.about .third p {
+	text-align: right;
+}
+.about .fourth h4 {
+	text-align: left;
+}
+.about .fourth p {
+	text-align: left;
+}
+.about img {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 70px;
+	border: 8px solid #F8F8FF;
+}
+.about .col-5 p {
+	font-family: 'Lobster', cursive;
+}
+.lv {
+	border-left: 4px solid #F8F8FF;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    margin-top: 150px;
+}
+.yellowcircle {
+	margin-top: 20px;
+	background-color: #FF8C00;
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+	border: 8px solid #F8F8FF;
+	text-align: center;
+	display: inline-block;
+}
+.yellowtext {
+	text-transform: uppercase;
+	font-family: 'Archivo Black', sans-serif;
+	color: #fff;
+	font-size: 17px;
+	top: 35px;
+}
+
+/*TEAM*/
+
+.team {
+	height: 500px;
+	background-color: #F8F8FF;
+	margin-top: 100px;
+}
+.team .staff img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	object-fit: cover;
+	border: 8px solid #FFF;
+}
+.team .icons .fa {
+	font-size: 28px;
+	margin: 7px;
+	border: 3px solid #000;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	padding: 3px;
+}
+.team .tittle h2 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.team p {
+	font-family: 'Lobster', cursive;
+}
+.team .staff h4 {
+	font-family: 'Archivo Black', sans-serif;
+}
+
+/*LOGOTYPE*/
+
+.logotype {
+	margin-top: 50px;
+}
+
+/*CONTACT*/
+
+.contact {
+	height: 500px;
+	margin-top: 50px;
+	width: 100%;
+	background-position: top;
+	background-image: url('https://raw.githubusercontent.com/piekario13/projekt1/master/images/tlo2.jpeg');
+}
+.contact h2 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.contact p {
+	font-family: 'Lobster', cursive;
+	color: #F8F8FF;
+}
+.contact input {
+	margin-bottom: 30px;
+	height: 50px;
+}
+.contact .big {
+	height: 210px;
+	width: 100%;
+}
+.contact .btn {
+	height: 50px;
+	text-transform: uppercase;
+}
+
+/*FOOTER*/
+
+.footer {
+	height: 70px;
+	margin-top: 20px;
+}
+.footer h6 {
+	font-family: 'Archivo Black', sans-serif;
+	margin-top: 20px;
+}
+.footer .col-6 .fa {
+	font-size: 25px;
+	margin: 8px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #000;
+	color: #fff;
+	padding: 7px;
+}
+
+@media (max-width: 768px) {
+
+	/*HEADER*/
+header {
+	height: 320px;
+	background-color: #F8F8FF;
+	width: 100%;
+}
+header .logo {
+	width: 200px;
+	margin: 5px;
+	float: none;
+}
+header nav ul li a {
+	color: #000;
+	font-size: 20px;
+	margin: 0 auto;
+}
+header nav ul li {
+	display: block;
+}
+header nav ul {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	text-align: center;
+}
+
+/*JUMBOTRON*/
+
+.background {
+	background-image: url('https://raw.githubusercontent.com/piekario13/projekt1/master/images/tlo1.jpg');
+	height: 700px;
+}
+.slogan {
+	margin-top: 50px;
+}
+.uppercase {
+	text-transform: uppercase;
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 60px;
+	margin-top: 50px;
+}
+.slogan .btn-warning {
+	text-transform: uppercase;
+	margin-top: 40px;
+	padding: 15px;
+	text-align: center;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+/*PORTFOLIO*/
+
+.portfolio {
+	height: 2800px;
+	background-color: #F8F8FF;
+}
+
+/*ABOUT*/
+
+.about {
+	margin-top: 70px;
+}
+.about .second .col-m-5 {
+	width: 100%;
+}
+.about .fourth .col-m-5 {
+	width: 100%;
+}
+.about img {
+	margin-top: 40px;
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 70px;
+	border: 8px solid #F8F8FF;
+}
+.about .first img {
+	float: left;
+}
+.about .third img {
+	float: left;
+}
+.about .second img {
+	float: right;
+}
+.about .fourth img {
+	float: right;
+}
+.about .first p {
+	font-family: 'Lobster', cursive;
+	text-align: right;
+}
+.lv {
+	border-left: 0px solid #F8F8FF;
+}
+.yellowcircle {
+	margin-top: 20px;
+	background-color: #FF8C00;
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+	border: 8px solid #F8F8FF;
+	text-align: center;
+	display: inline-block;
+}
+.yellowtext {
+	text-transform: uppercase;
+	font-family: 'Archivo Black', sans-serif;
+	color: #fff;
+	font-size: 17px;
+	top: 35px;
+}
+
+/*TEAM*/
+
+.team {
+	height: 1400px;
+	background-color: #F8F8FF;
+	margin-top: 100px;
+}
+
+/*CONTACT*/
+
+.contact {
+	height: 780px;
+	margin-top: 50px;
+	width: 100%;
+	background-position: top;
+}
+
+/*FOOTER*/
+
+.footer {
+	height: 50px;
+	margin-top: 40px;
+}
+
+}
